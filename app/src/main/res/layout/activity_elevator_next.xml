@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.dialog.ElevatorNextActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <ImageView
+        android:id="@+id/iv_chuantong"
+        android:layout_width="@dimen/dp_77"
+        android:layout_height="@dimen/dp_77"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_19"
+        android:src="@mipmap/chuantonginf"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+
+    <ImageView
+        android:id="@+id/iv_elevator_media"
+        android:layout_width="@dimen/dp_77"
+        android:layout_height="@dimen/dp_77"
+        android:layout_marginLeft="@dimen/dp_143"
+        android:src="@mipmap/main_bm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_chuantong" />
+
+    <ImageView
+        android:id="@+id/iv_div_media"
+        android:layout_width="@dimen/dp_77"
+        android:layout_height="@dimen/dp_77"
+        android:layout_marginLeft="@dimen/dp_259"
+        android:src="@mipmap/main_suiji_bm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_elevator_media" />
+
+    <ImageView
+        android:id="@+id/iv_difangziying"
+        android:layout_width="@dimen/dp_77"
+        android:layout_height="@dimen/dp_77"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_36"
+        android:src="@mipmap/main_diy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_elevator_media" />
+
+    <ImageView
+        android:id="@+id/iv_pjj_lingshou"
+        android:layout_width="@dimen/dp_77"
+        android:layout_height="@dimen/dp_77"
+        android:layout_marginLeft="@dimen/dp_143"
+        android:src="@mipmap/main_suiji_diy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_difangziying" />
+    <ImageView
+        android:id="@+id/iv_yixue"
+        android:layout_width="@dimen/dp_77"
+        android:layout_height="@dimen/dp_77"
+        android:layout_marginLeft="@dimen/dp_259"
+        android:src="@mipmap/main_pp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_pjj_lingshou" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="便民信息发布"
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_elevator_media"
+        app:layout_constraintRight_toRightOf="@+id/iv_elevator_media"
+        app:layout_constraintTop_toBottomOf="@+id/iv_elevator_media" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="传统信息发布"
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_chuantong"
+        app:layout_constraintRight_toRightOf="@+id/iv_chuantong"
+        app:layout_constraintTop_toBottomOf="@+id/iv_chuantong" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="随机便民信息发布"
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_div_media"
+        app:layout_constraintRight_toRightOf="@+id/iv_div_media"
+        app:layout_constraintTop_toBottomOf="@+id/iv_div_media" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="DIY信息发布"
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_difangziying"
+        app:layout_constraintRight_toRightOf="@+id/iv_difangziying"
+        app:layout_constraintTop_toBottomOf="@+id/iv_difangziying" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="随机信息发布"
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_pjj_lingshou"
+        app:layout_constraintRight_toRightOf="@+id/iv_pjj_lingshou"
+        app:layout_constraintTop_toBottomOf="@+id/iv_pjj_lingshou" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="拼屏信息发布"
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_yixue"
+        app:layout_constraintRight_toRightOf="@+id/iv_yixue"
+        app:layout_constraintTop_toBottomOf="@+id/iv_yixue" />
+</android.support.constraint.ConstraintLayout>

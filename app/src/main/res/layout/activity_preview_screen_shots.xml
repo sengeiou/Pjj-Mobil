@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.PreviewScreenShotsActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <View
+        android:id="@+id/view_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_11" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+
+        <FrameLayout
+            android:id="@+id/rl_xsp"
+            android:layout_width="@dimen/dp_307"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <!--android:paddingStart="@dimen/dp_12"-->
+            <!--android:paddingTop="@dimen/dp_13"-->
+            <!--android:paddingEnd="@dimen/dp_12"-->
+            <!--android:paddingBottom="@dimen/dp_42">-->
+
+            <com.pjj.view.custom.ClipImageView
+                android:id="@+id/iv_screenshots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/xsp_empty_side" />
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

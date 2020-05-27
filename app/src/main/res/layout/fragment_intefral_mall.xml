@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.IntegralMallFragment">
+
+    <com.pjj.view.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_f1f1f1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_mall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/dp_14"
+            android:paddingTop="0dp"
+            android:paddingEnd="@dimen/dp_14"
+            android:paddingBottom="@dimen/dp_10" />
+    </com.pjj.view.pulltorefresh.PullToRefreshLayout>
+
+</FrameLayout>

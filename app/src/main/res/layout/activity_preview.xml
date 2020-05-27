@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.PreviewXspActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <View
+        android:id="@+id/view_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_11" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_xsp"
+                android:layout_width="@dimen/dp_309"
+                android:layout_height="@dimen/dp_554"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/xsp_bg_side">
+
+                <FrameLayout
+                    android:id="@+id/fl_diy"
+                    android:layout_width="@dimen/dp_281"
+                    android:layout_height="@dimen/dp_424"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_51">
+
+                    <com.pjj.view.custom.MyVideoView
+                        android:id="@+id/video"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/default_diy" />
+
+                    <ImageView
+                        android:id="@+id/iv_player"
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="@dimen/dp_80"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_10"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/video"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_content"
+                    android:layout_width="@dimen/dp_280"
+                    android:layout_height="@dimen/dp_47"
+                    android:layout_below="@+id/fl_diy"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal">
+
+                </FrameLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

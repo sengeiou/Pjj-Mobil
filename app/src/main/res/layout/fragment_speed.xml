@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.SpeedFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_speed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dp_31"
+        android:paddingTop="@dimen/dp_24"
+        android:paddingEnd="0dp"
+        android:paddingBottom="0dp" />
+
+</FrameLayout>

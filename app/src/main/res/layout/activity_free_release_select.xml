@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.FreeReleaseSelectActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <ImageView
+        android:id="@+id/iv_tag"
+        android:layout_width="@dimen/dp_332"
+        android:layout_height="@dimen/dp_209"
+        android:layout_marginTop="@dimen/dp_87"
+        android:src="@mipmap/free_tag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请先选择发布身份"
+        android:textColor="@color/color_555555"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginTop="@dimen/dp_50"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_tag" />
+    <View
+        android:layout_width="@dimen/dp_19"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_666666"
+        app:layout_constraintTop_toTopOf="@+id/tv_title"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintRight_toLeftOf="@+id/tv_title"
+        android:layout_marginEnd="@dimen/dp_12"/>
+    <View
+        android:layout_width="@dimen/dp_19"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_666666"
+        app:layout_constraintTop_toTopOf="@+id/tv_title"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintLeft_toRightOf="@+id/tv_title"
+        android:layout_marginStart="@dimen/dp_12"/>
+    <ImageView
+        android:id="@+id/iv_person"
+        android:layout_width="@dimen/dp_58"
+        android:layout_height="@dimen/dp_58"
+        android:layout_marginStart="@dimen/dp_77"
+        android:layout_marginTop="@dimen/dp_37"
+        android:src="@mipmap/ad_person"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <ImageView
+        android:id="@+id/iv_merchants"
+        android:layout_width="@dimen/dp_58"
+        android:layout_height="@dimen/dp_58"
+        android:layout_marginStart="@dimen/dp_92"
+        android:layout_marginTop="@dimen/dp_37"
+        android:src="@mipmap/ad_merchants"
+        app:layout_constraintLeft_toRightOf="@+id/iv_person"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_17"
+        android:text="个人信息发布"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_person"
+        app:layout_constraintRight_toRightOf="@+id/iv_person"
+        app:layout_constraintTop_toBottomOf="@+id/iv_person" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_17"
+        android:text="商家信息发布"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_merchants"
+        app:layout_constraintRight_toRightOf="@+id/iv_merchants"
+        app:layout_constraintTop_toBottomOf="@+id/iv_merchants" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_278"
+    android:layout_height="@dimen/dp_173">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_36"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_19"
+        android:src="@mipmap/ico_red" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="订单已超时,请重新下单~"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="@dimen/dp_139"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/color_888888"
+        android:textSize="@dimen/sp_15" />
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="@dimen/dp_139"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="重新下单"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_15" />
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignRight="@+id/tv_cancel"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_eeeeee"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignTop="@+id/tv_cancel"
+        android:background="@color/color_eeeeee"/>
+</RelativeLayout>

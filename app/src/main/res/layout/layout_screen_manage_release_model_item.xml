@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_77"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_128"
+        android:background="@color/color_f1f1f1"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_33"
+        android:layout_below="@+id/iv"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_3"
+        android:paddingEnd="@dimen/dp_3"
+        android:text="选择"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_33"
+        android:layout_below="@+id/iv"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_3"
+        android:paddingEnd="@dimen/dp_3"
+        android:text="删除"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14" />
+
+    <ImageView
+        android:id="@+id/iv_video"
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_22"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_53"
+        android:src="@drawable/video" />
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_128"
+        android:background="@color/color_000000_70"
+        android:scaleType="center"
+        android:src="@mipmap/select_white_1"
+        android:visibility="visible" />
+</RelativeLayout>

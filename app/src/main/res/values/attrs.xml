@@ -1,0 +1,113 @@
+<resources>
+    <declare-styleable name="TitleView">
+        <attr name="text_middle" format="string" />
+        <attr name="src_left" format="reference" />
+        <attr name="text_middle_size" format="dimension" />
+        <attr name="text_middle_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="DeleteLineTextView">
+        <attr name="text_no_delete" format="string" />
+        <attr name="text_no_delete_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="DateViewGroup">
+        <!--每列个数-->
+        <attr name="date_num_columns" format="integer" />
+        <!--子元素边长-->
+        <attr name="date_child_length" format="dimension" />
+        <!--每行间隔-->
+        <attr name="date_padding_line" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ImageStyleView">
+        <attr name="image_style" format="enum">
+            <enum name="all" value="1" />
+            <enum name="half" value="2" />
+            <enum name="four" value="3" />
+            <enum name="more" value="4" />
+        </attr>
+    </declare-styleable>
+    <!-- slide bar 有效内容背景 -->
+    <attr name="backgroundColor" format="color|reference" />
+    <!-- slide bar　描边 -->
+    <attr name="strokeColor" format="color|reference" />
+    <!-- slide bar 文字颜色 -->
+    <attr name="textColor" format="color|reference" />
+    <!-- slide bar　文字大小 -->
+    <attr name="textSize" format="dimension" />
+    <!-- slide bar 选中文字颜色 -->
+    <attr name="selectTextColor" format="color|reference" />
+    <!-- slide bar 选中文字大小 -->
+    <attr name="selectTextSize" format="dimension" />
+    <!-- slide bar　选中时候提示文字颜色 -->
+    <attr name="hintTextColor" format="color|reference" />
+    <!-- slide bar　选中时候提示文字大小 -->
+    <attr name="hintTextSize" format="dimension" />
+    <!-- slide bar　选中时候提示圆形半径 -->
+    <attr name="hintCircleRadius" format="dimension" />
+    <!-- slide bar　选中时候提示圆形颜色 -->
+    <attr name="hintCircleColor" format="color|reference" />
+    <!-- slide bar　选中时候提示背景形状 -->
+    <attr name="hintShape" format="enum">
+        <enum name="circle" value="0" />
+        <enum name="rectangle" value="1" />
+    </attr>
+    <!-- slide bar　选中时候波浪颜色 -->
+    <attr name="waveColor" format="color|reference" />
+    <!-- slide bar　选中时候波浪半径 -->
+    <attr name="waveRadius" format="dimension" />
+    <!-- slide bar　里面文字上＋下padding -->
+    <attr name="contentPadding" format="dimension" />
+    <!-- slide bar　上+下+右padding -->
+    <attr name="barPadding" format="dimension" />
+    <!-- slide bar　宽度 -->
+    <attr name="barWidth" format="dimension" />
+    <declare-styleable name="AZWaveSideBarView">
+        <!-- slide bar 有效内容背景 -->
+        <attr name="backgroundColor" />
+        <!-- slide bar　描边 -->
+        <attr name="strokeColor" />
+        <!-- slide bar 文字颜色 -->
+        <attr name="textColor" />
+        <!-- slide bar　文字大小 -->
+        <attr name="textSize" />
+        <!-- slide bar 选中文字颜色 -->
+        <attr name="selectTextColor" />
+        <!-- slide bar 选中文字大小 -->
+        <attr name="selectTextSize" />
+        <!-- slide bar　选中时候提示文字颜色 -->
+        <attr name="hintTextColor" />
+        <!-- slide bar　选中时候提示文字大小 -->
+        <attr name="hintTextSize" />
+        <!-- slide bar　选中时候提示圆形半径 -->
+        <attr name="hintCircleRadius" />
+        <!-- slide bar　选中时候提示圆形颜色 -->
+        <attr name="hintCircleColor" />
+        <!-- slide bar　选中时候波浪颜色 -->
+        <attr name="waveColor" />
+        <!-- slide bar　选中时候波浪半径 -->
+        <attr name="waveRadius" />
+        <!-- slide bar　里面文字上＋下padding -->
+        <attr name="contentPadding" />
+        <!-- slide bar　上+下+右padding -->
+        <attr name="barPadding" />
+        <!-- slide bar　宽度 -->
+        <attr name="barWidth" />
+    </declare-styleable>
+    <declare-styleable name="ArcMenu">
+        <attr name="main_btn_img" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="PullToRefreshLayout">
+        <attr name="view_error" format="reference" />
+        <attr name="view_empty" format="reference" />
+        <attr name="view_loading" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ImageButtonView">
+        <attr name="button_text_size" format="dimension"/>
+        <attr name="button_text_color" format="color"/>
+        <attr name="button_left_drawable" format="reference"/>
+        <attr name="button_text" format="string"/>
+        <attr name="button_left_drawable_width" format="dimension"/>
+        <attr name="button_left_drawable_height" format="dimension"/>
+        <attr name="button_left_drawable_padding" format="dimension"/>
+        <attr name="button_text_split_tag" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_38">
+
+    <TextView
+        android:id="@+id/tv_xsp_name"
+        android:layout_width="@dimen/dp_290"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_37"
+        android:paddingEnd="0dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_11" />
+
+    <TextView
+        android:id="@+id/tv_time_inf"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:text="时间详情"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_11" />
+    <View style="@style/lineViewH"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

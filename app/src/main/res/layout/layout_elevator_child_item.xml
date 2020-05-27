@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_58">
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_47"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_58"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingBottom="@dimen/dp_14"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_3"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/select" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/dp_33"
+        android:layout_height="@dimen/dp_39"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_toRightOf="@+id/iv_select"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_xsp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@+id/iv"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/tv_xsp_price_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv"
+        android:layout_toEndOf="@+id/iv"
+        android:text="¥"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_xsp_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_xsp_price_left"
+        android:layout_marginEnd="@dimen/dp_2"
+        android:layout_toEndOf="@+id/tv_xsp_price_left"
+        android:text="元/小时"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_f5f5f5" />
+</RelativeLayout>

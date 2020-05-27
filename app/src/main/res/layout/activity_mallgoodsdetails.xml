@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MallGoodsDetailsActivity">
+
+    <com.pjj.view.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pullToRefreshScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f4f4f4"
+        android:layout_above="@+id/ll_bottom">
+
+        <ScrollView
+            android:id="@+id/scrollViewGoods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.youth.banner.Banner
+                    android:id="@+id/iv_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_360"
+                    app:banner_default_image="@color/transparent"
+                    app:indicator_drawable_selected="@drawable/selected_radius"
+                    app:indicator_drawable_unselected="@drawable/unselected_radius"
+                    app:indicator_height="@dimen/dp_8"
+                    app:indicator_margin="@dimen/dp_4"
+                    app:indicator_width="@dimen/dp_8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View style="@style/lineViewH" />
+
+                <RelativeLayout
+                    android:id="@+id/ll_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp_23"
+                    android:paddingBottom="@dimen/dp_0"
+                    android:background="@color/white"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_goods">
+
+                    <TextView
+                        android:id="@+id/tv_goods_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="2"
+                        android:paddingStart="@dimen/dp_12"
+                        android:paddingEnd="@dimen/dp_12"
+                        android:text="商品"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/sp_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_freight"
+                        android:layout_alignParentEnd="true"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingEnd="@dimen/dp_17"
+                        android:text="¥0.00"
+                        android:textColor="@color/color_ff4c4c"
+                        android:textSize="@dimen/sp_19" />
+
+                    <TextView
+                        android:id="@+id/tv_freight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_goods_name"
+                        android:layout_marginTop="@dimen/dp_19"
+                        android:paddingStart="@dimen/dp_14"
+                        android:paddingEnd="@dimen/dp_0"
+                        android:text="运费：包邮"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_below="@+id/tv_freight"
+                        android:layout_marginStart="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:layout_marginEnd="@dimen/dp_12"
+                        android:background="@color/color_eeeeee" />
+
+
+                    <TextView
+                        android:id="@+id/tv_goods_describe1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_freight"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:paddingStart="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_11"
+                        android:paddingEnd="@dimen/dp_12"
+                        android:paddingBottom="@dimen/dp_11"
+                        android:text="商品简介商品简介商品简介商品简介"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:id="@+id/space_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_14"
+                        android:layout_below="@+id/tv_goods_describe1"
+                        android:background="@color/color_f1f1f1" />
+
+                    <TextView
+                        android:id="@+id/tv_goods_describe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_43"
+                        android:layout_below="@+id/space_view"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/dp_13"
+                        android:paddingEnd="@dimen/dp_24"
+                        android:text="商品参数"
+                        android:textColor="@color/color_888888"
+                        android:textSize="@dimen/sp_12" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_content3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/space_view"
+                        android:layout_toEndOf="@+id/tv_goods_describe"
+                        android:orientation="vertical" />
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_up_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:background="@color/color_f4f4f4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableStart="@mipmap/up_more"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:text="上拉查看图文详情"
+                        android:textColor="@color/color_555555" />
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.pjj.view.pulltorefresh.PullToRefreshLayout>
+
+    <com.pjj.view.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pullToRefreshScrollImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/fl_title"
+        android:background="@color/color_f4f4f4"
+        android:visibility="gone">
+
+        <ScrollView
+            android:id="@+id/scrollViewImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </com.pjj.view.pulltorefresh.PullToRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:paddingTop="@dimen/dp_24">
+
+        <ImageView
+            android:id="@+id/iv_finish"
+            android:layout_width="@dimen/dp_55"
+            android:layout_height="@dimen/dp_29"
+            android:paddingStart="@dimen/dp_13"
+            android:paddingEnd="@dimen/dp_13"
+            android:src="@mipmap/back_bg_gray" />
+
+        <com.pjj.view.custom.TitleView
+            android:id="@+id/titleView11"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_42" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_53"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_ke_fu"
+            android:layout_width="@dimen/dp_96"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/kefu"
+            android:gravity="center_horizontal"
+            android:text="联系客服"
+            android:paddingTop="@dimen/dp_10"
+            android:drawablePadding="@dimen/dp_3"
+            android:textColor="@color/color_888888"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/tv_add_shop_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_theme"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_fe8024"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+</RelativeLayout>

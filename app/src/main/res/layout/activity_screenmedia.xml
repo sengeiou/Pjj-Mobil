@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.ScreenMediaActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_106"
+        android:paddingLeft="@dimen/dp_11"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_11"
+        android:paddingBottom="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@+id/titleView">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/iv_building1"
+            android:layout_width="@dimen/dp_65"
+            android:layout_height="@dimen/dp_96"
+            android:layout_marginEnd="@dimen/dp_14"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/dp_3">
+
+            <ImageView
+                android:id="@+id/iv_building"
+                android:layout_width="@dimen/dp_65"
+                android:layout_height="@dimen/dp_96"
+                android:scaleType="fitXY" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_building_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_building1"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_building_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_building_name"
+            android:layout_marginTop="@dimen/dp_7"
+            android:layout_toEndOf="@+id/iv_building1"
+            android:textColor="@color/color_777777"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/tv_elevator_num"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_24"
+            android:layout_below="@+id/tv_building_location"
+            android:layout_marginTop="@dimen/dp_21"
+            android:layout_toEndOf="@+id/iv_building1"
+            android:background="@drawable/shape_theme_side_3"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_6"
+            android:paddingEnd="@dimen/dp_6"
+            android:text="屏幕"
+            android:textColor="@color/color_theme"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/rl_line"
+        style="@style/lineViewH"
+        app:layout_constraintTop_toBottomOf="@+id/rl_head" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_screen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_submit"
+        app:layout_constraintTop_toBottomOf="@+id/rl_line" />
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/color_d2d2d2"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_17"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

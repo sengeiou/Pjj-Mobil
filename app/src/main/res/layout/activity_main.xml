@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/content1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom" />
+
+    <RadioGroup
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_9"
+        android:paddingEnd="@dimen/dp_9">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:padding="@dimen/dp_6"
+            android:text="首页"
+            android:textColor="@color/main_select_radio_text_color"
+            android:textSize="@dimen/sp_11" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_10"/>
+        <RadioButton
+            android:id="@+id/rb_works"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="@dimen/dp_6"
+            android:text="模板"
+            android:textColor="@color/main_select_radio_text_color"
+            android:textSize="@dimen/sp_11" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_10"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布"
+            android:textSize="@dimen/sp_11"
+            android:visibility="invisible"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_10"/>
+        <RadioButton
+            android:id="@+id/rb_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="@dimen/dp_6"
+            android:text="订单"
+            android:textColor="@color/main_select_radio_text_color"
+            android:textSize="@dimen/sp_11" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_10"/>
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="@dimen/dp_6"
+            android:text="我的"
+            android:textColor="@color/main_select_radio_text_color"
+            android:textSize="@dimen/sp_11" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:background="@color/color_000000_60"
+        android:visibility="gone">
+
+        <com.pjj.view.custom.MainMenuView
+            android:id="@+id/mainMenu"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_156"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_3"
+        android:layout_above="@+id/rl_bottom"
+        android:background="@drawable/line_gradient_ddd" />
+
+    <View
+        android:id="@+id/view_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rl_bottom"
+        android:layout_alignBottom="@+id/rl_bottom"
+        android:background="@color/transparent"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/rbPress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:drawableTop="@mipmap/press"
+        android:drawablePadding="@dimen/dp_m_2"
+        android:gravity="center_horizontal"
+        android:paddingTop="0dp"
+        android:paddingBottom="@dimen/dp_6"
+        android:text="发布"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_11" />
+</RelativeLayout>

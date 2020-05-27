@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MallHomepageActivity">
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fl_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/rl_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/line_top" />
+
+    <RadioGroup
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_22"
+        android:paddingEnd="@dimen/dp_22"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:padding="@dimen/dp_6"
+            android:text="首页"
+            android:textColor="@color/main_select_radio_text_color"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_10"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_shop_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="@dimen/dp_6"
+            android:text="购物车"
+            android:textColor="@color/main_select_radio_text_color"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_10"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="@dimen/dp_6"
+            android:text="订单"
+            android:textColor="@color/main_select_radio_text_color"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_10"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="@dimen/dp_6"
+            android:text="我的"
+            android:textColor="@color/main_select_radio_text_color"
+            android:textSize="@dimen/sp_12" />
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>

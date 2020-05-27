@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_order"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f1f1f1"
+    android:paddingTop="@dimen/dp_7"
+    android:paddingBottom="@dimen/dp_7">
+
+    <com.pjj.view.custom.SpeedViewGroup
+        android:id="@+id/svg"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_120"
+        android:layout_gravity="center" />
+</FrameLayout>

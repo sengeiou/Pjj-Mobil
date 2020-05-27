@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.SelectBgColorActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:paddingStart="@dimen/dp_46"
+        android:paddingTop="@dimen/dp_38"
+        android:paddingEnd="@dimen/dp_46"
+        android:paddingBottom="@dimen/dp_38"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dp_24" />
+</LinearLayout>

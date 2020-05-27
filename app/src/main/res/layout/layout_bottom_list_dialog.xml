@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:padding="@dimen/dp_10"
+        android:src="@mipmap/close_gray" />
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="@dimen/dp_42"
+        android:layout_height="@dimen/dp_36"
+        android:padding="@dimen/dp_10"
+        android:src="@mipmap/right_attribute"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_38"
+        android:text="发布地点有误"
+        android:layout_below="@+id/iv_close"
+        android:layout_marginTop="@dimen/dp_3"
+        android:textColor="@color/color_555555"
+        android:textSize="@dimen/sp_13"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_38"
+        android:text="发布时间有误"
+        android:layout_below="@+id/tv_1"
+        android:textColor="@color/color_555555"
+        android:textSize="@dimen/sp_13"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_38"
+        android:text="发布内容有误"
+        android:layout_below="@id/tv_2"
+        android:textColor="@color/color_555555"
+        android:textSize="@dimen/sp_13"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_38"
+        android:text="其他原因"
+        android:layout_below="@id/tv_3"
+        android:textColor="@color/color_555555"
+        android:textSize="@dimen/sp_13"
+        android:gravity="center"/>
+</RelativeLayout>

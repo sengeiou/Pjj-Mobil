@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.SelectBMTypeActivity">
+
+    <include layout="@layout/layout_head_title" />
+    <TextView
+        android:id="@+id/tv_now_select"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_41"
+        android:gravity="center"
+        android:textColor="@color/color_333333"
+        android:paddingStart="@dimen/dp_14"
+        app:layout_constraintTop_toBottomOf="@+id/titleView"
+        android:textSize="@dimen/sp_12"/>
+    <TextView
+        android:id="@+id/tv_now_select_statue"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_41"
+        android:gravity="center"
+        android:textColor="@color/color_999999"
+        android:paddingStart="@dimen/dp_14"
+        android:text="当前选择"
+        app:layout_constraintTop_toBottomOf="@+id/titleView"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingEnd="@dimen/dp_14"
+        android:textSize="@dimen/sp_13"/>
+    <View
+        android:id="@+id/line_select"
+        style="@style/lineViewH"
+        app:layout_constraintTop_toBottomOf="@+id/tv_now_select"
+        android:layout_height="@dimen/dp_5"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/line_select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+</android.support.constraint.ConstraintLayout>

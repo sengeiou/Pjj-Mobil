@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.PreviewXspActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <View
+        android:id="@+id/view_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_11" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_xsp"
+                android:layout_width="@dimen/dp_307"
+                android:layout_height="@dimen/dp_554"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/xsp_bg">
+
+                <FrameLayout
+                    android:id="@+id/fl_diy"
+                    android:layout_width="@dimen/dp_278"
+                    android:layout_height="@dimen/dp_413"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_54">
+
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/default_diy" />
+                    <ViewStub
+                        android:id="@+id/stub_ijk"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout="@layout/layout_ijkplayer_item"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_bm"
+                    android:layout_width="@dimen/dp_239"
+                    android:layout_height="@dimen/dp_21"
+                    android:layout_below="@+id/fl_diy"
+                    android:layout_marginStart="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:gravity="center_vertical"
+                    android:maxLength="60"
+                    android:maxLines="2"
+                    android:text="热烈庆祝屏加加app以及电梯物联网系统本月正式上线；屏联你我，加载未来，开启电梯安全新纪元！！！"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_7" />
+
+            </RelativeLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

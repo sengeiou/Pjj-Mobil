@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_154">
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_33"
+        android:padding="@dimen/dp_14"
+        android:src="@mipmap/unselect"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_building"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_72"
+        android:layout_marginTop="@dimen/dp_21"
+        android:scaleType="fitXY"
+        android:src="@mipmap/building"
+        app:layout_constraintLeft_toRightOf="@+id/iv_select"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_building"
+        android:layout_width="@dimen/dp_192"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_23"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintLeft_toRightOf="@+id/iv_building"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_select_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:includeFontPadding="false"
+        android:text="已选屏幕："
+        android:textColor="@color/color_555555"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toRightOf="@+id/iv_building"
+        app:layout_constraintTop_toBottomOf="@+id/tv_building" />
+
+    <TextView
+        android:id="@+id/tv_select_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_23"
+        android:includeFontPadding="false"
+        android:text="0"
+        android:textColor="@color/color_ff4c4c"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_select_name"
+        app:layout_constraintLeft_toRightOf="@+id/tv_select_name" />
+
+    <TextView
+        android:id="@+id/tv_can_select_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_23"
+        android:includeFontPadding="false"
+        android:text="/0"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_select_name"
+        app:layout_constraintLeft_toRightOf="@+id/tv_select_count" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_14"
+        android:includeFontPadding="false"
+        android:text="0.00"
+        android:textColor="@color/color_ff8c19"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintLeft_toRightOf="@+id/iv_building"
+        app:layout_constraintTop_toBottomOf="@+id/tv_select_name" />
+
+    <TextView
+        android:id="@+id/tv_price_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_2"
+        android:includeFontPadding="false"
+        android:text="起"
+        android:textColor="@color/color_ff8c19"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_price"
+        app:layout_constraintLeft_toRightOf="@+id/tv_price" />
+
+    <TextView
+        android:id="@+id/tv_price_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_2"
+        android:includeFontPadding="false"
+        android:text="天/面"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_price"
+        app:layout_constraintLeft_toRightOf="@+id/tv_price_end" />
+
+    <TextView
+        android:id="@+id/tv_sum_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_14"
+        android:includeFontPadding="false"
+        android:text="总价：¥0.00"
+        android:textColor="@color/color_ff4c4c"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_price_unit"
+        app:layout_constraintLeft_toRightOf="@+id/tv_price_unit" />
+
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="@dimen/dp_8"
+        android:layout_height="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_49"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:src="@mipmap/right"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_17"
+        android:background="@color/color_e3e3e3"
+        app:layout_constraintTop_toBottomOf="@+id/iv_building" />
+
+    <TextView
+        android:id="@+id/tv_building_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_34"
+        android:drawableStart="@mipmap/local"
+        android:drawablePadding="@dimen/dp_8"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_27"
+        android:textColor="@color/color_555555"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/color_f4f4f4"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

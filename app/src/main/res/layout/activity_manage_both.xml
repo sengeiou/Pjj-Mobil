@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f4f4f4"
+    tools:context=".view.activity.ManageBothActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <TextView
+        android:id="@+id/tv_title_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:includeFontPadding="false"
+        android:text="请选择您要操作的类型"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <View
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginEnd="@dimen/dp_11"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title_explain"
+        app:layout_constraintRight_toLeftOf="@+id/tv_title_explain"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_explain" />
+
+    <View
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginStart="@dimen/dp_11"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title_explain"
+        app:layout_constraintLeft_toRightOf="@+id/tv_title_explain"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_explain" />
+    <!--媒体信息-->
+    <View
+        android:id="@+id/view_space_media"
+        android:layout_width="@dimen/dp_326"
+        android:layout_height="@dimen/dp_185"
+        android:layout_marginStart="@dimen/dp_17"
+        android:layout_marginTop="@dimen/dp_38"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_explain" />
+
+    <ImageView
+        android:id="@+id/iv_media"
+        android:layout_width="@dimen/dp_95"
+        android:layout_height="@dimen/dp_108"
+        android:layout_marginStart="@dimen/dp_24"
+        android:scaleType="fitXY"
+        android:src="@mipmap/video_img"
+        app:layout_constraintBottom_toBottomOf="@id/view_space_media"
+        app:layout_constraintLeft_toLeftOf="@+id/view_space_media"
+        app:layout_constraintTop_toTopOf="@+id/view_space_media" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_34"
+        android:includeFontPadding="false"
+        android:text="发布视频/图片"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toRightOf="@+id/iv_media"
+        app:layout_constraintTop_toTopOf="@+id/iv_media" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_36"
+        android:includeFontPadding="false"
+        android:text="视频大小不可超过20M"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_media"
+        app:layout_constraintLeft_toRightOf="@+id/iv_media" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_9"
+        android:layout_height="@dimen/dp_19"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:scaleType="fitXY"
+        android:src="@mipmap/right"
+        app:layout_constraintBottom_toBottomOf="@id/view_space_media"
+        app:layout_constraintRight_toRightOf="@+id/view_space_media"
+        app:layout_constraintTop_toTopOf="@+id/view_space_media" />
+    <!--底部通知-->
+    <View
+        android:id="@+id/view_space_note"
+        android:layout_width="@dimen/dp_326"
+        android:layout_height="@dimen/dp_185"
+        android:layout_marginLeft="@dimen/dp_17"
+        android:layout_marginTop="@dimen/dp_38"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_space_media" />
+
+    <ImageView
+        android:id="@+id/iv_note"
+        android:layout_width="@dimen/dp_95"
+        android:layout_height="@dimen/dp_108"
+        android:layout_marginStart="@dimen/dp_24"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bm_note"
+        app:layout_constraintBottom_toBottomOf="@id/view_space_note"
+        app:layout_constraintLeft_toLeftOf="@+id/view_space_note"
+        app:layout_constraintTop_toTopOf="@+id/view_space_note" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_34"
+        android:includeFontPadding="false"
+        android:text="发布通知信息"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toRightOf="@+id/iv_note"
+        app:layout_constraintTop_toTopOf="@+id/iv_note" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_36"
+        android:includeFontPadding="false"
+        android:text="通知标题不可超过8个字"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_note"
+        app:layout_constraintLeft_toRightOf="@+id/iv_note" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_9"
+        android:layout_height="@dimen/dp_19"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:scaleType="fitXY"
+        android:src="@mipmap/right"
+        app:layout_constraintBottom_toBottomOf="@id/view_space_note"
+        app:layout_constraintRight_toRightOf="@+id/view_space_note"
+        app:layout_constraintTop_toTopOf="@+id/view_space_note" />
+</android.support.constraint.ConstraintLayout>

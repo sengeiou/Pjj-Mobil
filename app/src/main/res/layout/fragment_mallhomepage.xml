@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragment.MallHomepageFragment">
+
+    <com.pjj.view.custom.TitleView
+        android:id="@+id/mallTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_42"
+        android:background="@color/white" />
+
+    <com.pjj.view.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.pjj.view.custom.MyScrollView
+            android:id="@+id/myScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_338">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_238"
+                        android:paddingBottom="@dimen/dp_10"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_120"
+                        android:layout_below="@+id/banner"
+                        android:layout_marginTop="@dimen/dp_m_10"
+                        android:background="@drawable/shape_white_bg_8_lr"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_right"
+                            android:layout_width="@dimen/dp_351"
+                            android:layout_height="@dimen/dp_88"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/gold_tag" />
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_eeeeee" />
+
+                <net.lucode.hackware.magicindicator.MagicIndicator
+                    android:id="@+id/magic"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_43"
+                    android:background="@color/white"
+                    android:paddingStart="@dimen/dp_14"
+                    android:paddingEnd="@dimen/dp_14" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_mall"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp" />
+            </LinearLayout>
+        </com.pjj.view.custom.MyScrollView>
+    </com.pjj.view.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.BirthdayWishesActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_42"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.pjj.view.custom.DiyTemplateView
+        android:id="@+id/diyTemplateView"
+        android:layout_width="@dimen/dp_259"
+        android:layout_height="@dimen/dp_432"
+        android:layout_marginTop="@dimen/dp_32"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <View
+        android:id="@+id/space_title"
+        android:layout_width="@dimen/dp_345"
+        android:layout_height="@dimen/dp_62"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_27"
+        android:background="@mipmap/space_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diyTemplateView" />
+
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_62"
+        android:layout_marginStart="@dimen/dp_28"
+        android:gravity="center_vertical"
+        android:text="广告名称："
+        android:textSize="@dimen/sp_13"
+        android:textColor="@color/color_555555"
+        app:layout_constraintLeft_toLeftOf="@+id/space_title"
+        app:layout_constraintTop_toTopOf="@+id/space_title" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_62"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="起一个响当当的名字吧~"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_999999"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintLeft_toRightOf="@+id/tv_explain"
+        app:layout_constraintRight_toRightOf="@+id/space_title"
+        app:layout_constraintTop_toTopOf="@+id/space_title" />
+</android.support.constraint.ConstraintLayout>

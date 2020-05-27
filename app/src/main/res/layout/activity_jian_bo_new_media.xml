@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.JianBoNewMediaActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <TextView
+        android:id="@+id/tv_play_num"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginStart="@dimen/dp_14"
+        android:gravity="center_vertical"
+        android:text="播放次数：190次"
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginEnd="@dimen/dp_14"
+        android:gravity="center_vertical"
+        android:text="数据截至当前时刻"
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <View
+        android:id="@+id/line_play"
+        style="@style/lineViewH"
+        app:layout_constraintTop_toBottomOf="@+id/tv_play_num" />
+
+    <TextView
+        android:id="@+id/tv_look"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginStart="@dimen/dp_14"
+        android:gravity="center_vertical"
+        android:text="查看截屏"
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_look"
+        app:layout_constraintTop_toBottomOf="@+id/line_play" />
+
+    <ImageView
+        android:id="@+id/iv_look"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginEnd="@dimen/dp_14"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:src="@mipmap/right"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_play" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_f1f1f1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_look" />
+</android.support.constraint.ConstraintLayout>

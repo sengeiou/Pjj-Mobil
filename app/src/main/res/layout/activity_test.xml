@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_707070_10"
+    android:orientation="vertical"
+    tools:context=".view.activity.TestActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_42"
+                android:background="@color/white">
+
+
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="@dimen/dp_42"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/video_img" />
+                    <ImageView
+                        android:id="@+id/iv1"
+                        android:layout_toEndOf="@+id/iv"
+                        android:layout_width="@dimen/dp_42"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/building" />
+                    <EditText
+                        android:id="@+id/et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_bfbfbf_side_3"
+                        android:layout_toEndOf="@+id/iv1" />
+                        <!--android:background="@android:drawable/edit_text"-->
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

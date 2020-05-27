@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.BuildingActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_building"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleView" />
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="@dimen/dp_103"
+        android:layout_height="@dimen/dp_55"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_14"
+        android:background="@drawable/shape_theme_bg_3"
+        android:drawableLeft="@mipmap/right_circle_white"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="0dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_15" />
+</RelativeLayout>

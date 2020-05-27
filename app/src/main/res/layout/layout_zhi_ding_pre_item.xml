@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingStart="@dimen/dp_12"
+    android:paddingEnd="@dimen/dp_12"
+    android:paddingBottom="@dimen/dp_17">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/dp_14"
+        android:layout_height="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_15"
+        android:src="@mipmap/close" />
+
+    <View
+        android:id="@+id/view_close"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_toEndOf="@+id/iv_close"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dp_21"
+        android:paddingEnd="@dimen/dp_10"
+        android:textColor="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_name">
+
+        <com.pjj.view.custom.TextureVideoView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/default_diy" />
+
+        <ImageView
+            android:id="@+id/iv_player"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_10"
+            android:scaleType="fitXY"
+            android:src="@drawable/video"
+            android:visibility="gone" />
+    </FrameLayout>
+</RelativeLayout>

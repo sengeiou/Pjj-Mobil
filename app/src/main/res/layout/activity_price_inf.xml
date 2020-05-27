@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.PriceInfActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_9"
+        android:paddingEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共计："
+            android:textColor="@color/color_444444"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/tv_sum_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_ea4a4a"
+            android:textSize="@dimen/sp_13" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="@dimen/dp_115"
+            android:layout_height="@dimen/dp_48"
+            android:background="@color/color_theme"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_price"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_f1f1f1"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_10"
+        app:layout_constraintBottom_toTopOf="@+id/ll_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+</android.support.constraint.ConstraintLayout>

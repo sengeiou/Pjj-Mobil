@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_58">
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_57"
+        android:src="@mipmap/unselect"
+        android:paddingTop="@dimen/dp_19"
+        android:paddingBottom="@dimen/dp_19"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_14"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_12"
+        android:text="1号"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toEndOf="@+id/iv"
+        android:textColor="@color/color_333333"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_21"
+        android:background="@drawable/shape_theme_side_3"
+        android:text="整屏投放"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_4"
+        android:paddingStart="@dimen/dp_7"
+        android:paddingEnd="@dimen/dp_7"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_12"
+        android:layout_toEndOf="@+id/iv"
+        android:layout_below="@id/tv_name"/>
+    <View style="@style/lineViewH"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_154"
+    android:layout_height="wrap_content">
+
+    <com.pjj.view.custom.TowMediaView
+        android:id="@+id/towMediaView"
+        android:layout_width="@dimen/dp_144"
+        android:layout_height="@dimen/dp_213"
+        android:layout_marginTop="@dimen/dp_11"/>
+    <ImageView
+        android:id="@+id/iv_pass"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_11"
+        android:visibility="gone"
+        android:src="@mipmap/order_pass" />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/towMediaView"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_12" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_22"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/delete" />
+    <ImageView
+        android:id="@+id/iv_select"
+        android:scaleType="center"
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_width="@dimen/dp_144"
+        android:layout_height="@dimen/dp_213" />
+</RelativeLayout>

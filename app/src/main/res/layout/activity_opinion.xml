@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.OpinionActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <EditText
+        android:id="@+id/et_opinion"
+        android:layout_width="@dimen/dp_331"
+        android:layout_height="@dimen/dp_182"
+        android:layout_marginTop="@dimen/dp_34"
+        android:background="@drawable/shape_d2d2d2_bg_slide_3"
+        android:gravity="left|top"
+        android:hint="请输入您的宝贵建议或遇到的问题"
+        android:paddingStart="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_13"
+        android:paddingEnd="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_13"
+        android:textColor="@color/color_444444"
+        android:textColorHint="@color/color_999999"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="您还可以通过邮箱联系我们："
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_opinion" />
+
+    <TextView
+        android:id="@+id/tv_email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="邮箱：pingjiajia@pingjiajia.cn"
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_text" />
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="@dimen/dp_331"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_28"
+        android:background="@drawable/shape_theme_bg_3"
+        android:gravity="center"
+        android:text="提    交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email1" />
+</android.support.constraint.ConstraintLayout>

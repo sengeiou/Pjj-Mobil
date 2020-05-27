@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_55"
+    android:layout_height="@dimen/dp_28">
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_999999_side_3"
+        android:gravity="center"
+        android:text="1天"
+        android:textColor="@color/color_555555"
+        android:textSize="@dimen/sp_12" />
+    <TextView
+        android:id="@+id/tv_discount"
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_ff4c4c_lt_rb_bg_3"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="95折"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_7" />
+</FrameLayout>

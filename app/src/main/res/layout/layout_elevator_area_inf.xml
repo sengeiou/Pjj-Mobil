@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/iv_building"
+        android:layout_width="@dimen/dp_91"
+        android:layout_height="@dimen/dp_134"
+        android:layout_marginStart="@dimen/dp_34"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginEnd="@dimen/dp_14"
+        android:layout_marginBottom="@dimen/dp_14"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="@dimen/dp_3">
+
+        <ImageView
+            android:id="@+id/iv_building1"
+            android:layout_width="@dimen/dp_91"
+            android:layout_height="@dimen/dp_134"
+            android:scaleType="fitXY"
+            android:src="@mipmap/building" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_building"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_19"
+        android:layout_toEndOf="@+id/iv_building"
+        android:text="北京某著名大厦"
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tv_local"
+        android:layout_width="@dimen/dp_133"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_building"
+        android:layout_toEndOf="@+id/iv_building"
+        android:drawableStart="@mipmap/location_gray"
+        android:drawablePadding="@dimen/dp_2"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="北京市西城区某某某大街234号某座"
+        android:textColor="@color/color_777777"
+        android:textSize="@dimen/sp_11" />
+
+    <TextView
+        android:id="@+id/tv_elevator_num"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_24"
+        android:layout_below="@+id/tv_local"
+        android:layout_marginTop="@dimen/dp_13"
+        android:layout_toEndOf="@+id/iv_building"
+        android:background="@drawable/shape_theme_side_3"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_5"
+        android:paddingEnd="@dimen/dp_5"
+        android:text="10部电梯"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_xsp_num"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_24"
+        android:layout_below="@+id/tv_local"
+        android:layout_marginTop="@dimen/dp_13"
+        android:layout_toEndOf="@+id/tv_elevator_num"
+        android:background="@drawable/shape_theme_side_3"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_5"
+        android:paddingEnd="@dimen/dp_5"
+        android:text="屏幕"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_xsp_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_xsp_num"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_toEndOf="@+id/iv_building"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_15" />
+
+    <TextView
+        android:id="@+id/tv_xsp_price_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_xsp_price"
+        android:layout_toEndOf="@+id/tv_xsp_price"
+        android:text="起"
+        android:textColor="@color/color_777777"
+        android:textSize="@dimen/sp_11" />
+</RelativeLayout>

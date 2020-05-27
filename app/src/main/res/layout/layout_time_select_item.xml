@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_43">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_42"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_37"
+        android:paddingEnd="0dp"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_11" />
+
+    <ImageView
+        android:id="@+id/tv_delete"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_34"
+        android:padding="@dimen/dp_9"
+        android:src="@mipmap/delete_white"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+
+    <View style="@style/lineViewH"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+
+

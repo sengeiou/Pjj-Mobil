@@ -1,0 +1,1 @@
+include ':app', ':magicindicator', ':mediapicker', ':backfinish', ':ijkplayer-java', ':ijkplayer-exo', ':intentlibrary'

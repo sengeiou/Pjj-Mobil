@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.pjj.view.custom.SpeedViewGroup
+        android:id="@+id/sg_speed"
+        android:layout_width="@dimen/dp_130"
+        android:layout_height="@dimen/dp_216"
+        android:background="@drawable/shape_b5b5b5_bg"/>
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="@dimen/dp_144"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:minHeight="@dimen/dp_35"
+        android:text="建议尺寸："
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="0dp"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_10" />
+</LinearLayout>

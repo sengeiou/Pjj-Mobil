@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.ScreenshotsListActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_42"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:text="去截屏"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_no_data"
+        android:layout_width="@dimen/dp_216"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_169"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_144"
+            android:scaleType="fitXY"
+            android:src="@mipmap/no_screenshots" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_22"
+            android:gravity="center_horizontal"
+            android:text="当前无截屏"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_19" />
+    </LinearLayout>
+
+    <com.pjj.view.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_screenshots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/dp_34"
+            android:paddingTop="@dimen/dp_19"
+            android:paddingEnd="0dp" />
+    </com.pjj.view.pulltorefresh.PullToRefreshLayout>
+</android.support.constraint.ConstraintLayout>

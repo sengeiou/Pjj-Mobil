@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.IntegralRulesActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_f1f1f1"
+        android:lineHeight="@dimen/dp_21"
+        android:text="1、您可在发布信息下单支付成功后获得金币，1元=1金币；\n2、所获金币会在3个工作日内打到您的个人账户，可登录您的账号在“我的-我的金币”中进行查询；\n3、所获金币可用于金币商城礼品兑换。"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14"
+        android:padding="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_162">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_44"
+        android:padding="@dimen/dp_14"
+        android:src="@mipmap/close" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_44"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:text="性别"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14" />
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_44"
+        android:padding="@dimen/sp_14"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/right_attribute" />
+    <View
+        style="@style/lineViewH"
+        android:id="@+id/line_title"
+        android:layout_below="@+id/iv_close"/>
+    <TextView
+        android:id="@+id/tv_boy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_58"
+        android:layout_below="@+id/line_title"
+        android:gravity="center"
+        android:text="男"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/lineViewH"
+        android:layout_below="@+id/tv_boy" />
+
+    <TextView
+        android:id="@+id/tv_girl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_58"
+        android:layout_below="@+id/line"
+        android:gravity="center"
+        android:text="女"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16" />
+</RelativeLayout>

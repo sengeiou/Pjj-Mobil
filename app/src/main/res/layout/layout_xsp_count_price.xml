@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_xsp_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_53"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="屏幕数量："
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_xsp_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_xsp_count"
+        android:layout_alignStart="@+id/tv_xsp_count"
+        android:layout_marginTop="@dimen/dp_7"
+        android:text="发布时长："
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_xsp_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_xsp_time"
+        android:layout_alignStart="@+id/tv_xsp_time"
+        android:layout_marginTop="@dimen/dp_7"
+        android:text="订单金额："
+        android:textColor="@color/color_444444"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginBottom="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="@dimen/dp_96"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_24"
+        android:background="@drawable/shape_theme_bg_3"
+        android:drawableLeft="@mipmap/right_circle_white_t"
+        android:drawablePadding="@dimen/dp_8"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_11"
+        android:text="确\t\t\t定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_15" />
+</RelativeLayout>

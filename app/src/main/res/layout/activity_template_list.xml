@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.TemplateListActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_31"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_31"
+        android:paddingEnd="0dp"
+        android:background="@color/color_fffeb9"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/titleView"
+        android:text="您可上传图片或视频，模板最多为5个"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_12" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_template"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_create_bm"
+        app:layout_constraintTop_toBottomOf="@+id/tv_explain"
+        app:layout_goneMarginBottom="0dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView">
+
+        <ImageView
+            android:layout_width="@dimen/dp_216"
+            android:layout_height="@dimen/dp_144"
+            android:layout_marginTop="@dimen/dp_156"
+            android:src="@mipmap/bian_min_no_template" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_22"
+            android:text="还没有创建过模板哦~" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_create"
+            android:layout_width="@dimen/dp_331"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/shape_theme_side_3"
+            android:gravity="center"
+            android:text="立即创建"
+            android:textColor="@color/color_theme"
+            android:textSize="@dimen/sp_15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_38" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_create"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_3"
+        android:background="@drawable/line_gradient_ddd"
+        app:layout_constraintBottom_toTopOf="@+id/tv_create_bm" />
+
+    <TextView
+        android:id="@+id/tv_create_bm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="立即创建"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MallSureOrderActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <TextView
+        android:id="@+id/tv_add_address"
+        android:layout_width="@dimen/dp_115"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/shape_ea4a4a_bg_19"
+        android:gravity="center"
+        android:text="添加收货地址"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <ViewStub
+        android:id="@+id/vs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_68"
+        android:layout="@layout/layout_address_item_include"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginBottom="@dimen/dp_67"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <View
+        android:id="@+id/line_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_68"
+        android:background="@color/color_f1f1f1"
+        app:layout_constraintBottom_toBottomOf="@+id/line"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_goods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_68"
+        android:padding="@dimen/dp_5"
+        app:layout_constraintBottom_toBottomOf="@+id/line_space"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <TextView
+        android:id="@+id/tv_heji_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_52"
+        android:layout_marginTop="@dimen/dp_14"
+        android:text=" 合计："
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_heji"
+        app:layout_constraintRight_toLeftOf="@+id/tv_heji" />
+
+    <TextView
+        android:id="@+id/tv_heji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:text="¥"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_record"
+        app:layout_constraintRight_toLeftOf="@+id/tv_record" />
+
+    <TextView
+        android:id="@+id/tv_yunfei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_36"
+        android:text="运费：元"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_heji_"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="@dimen/dp_13"/>
+
+    <TextView
+        android:id="@+id/tv_record"
+        android:layout_width="@dimen/dp_96"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginEnd="@dimen/dp_29"
+        android:background="@drawable/shape_theme_bg_19"
+        android:gravity="center"
+        android:text="提交订单"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+</android.support.constraint.ConstraintLayout>

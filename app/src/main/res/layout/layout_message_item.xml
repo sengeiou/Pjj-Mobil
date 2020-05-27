@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_278"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="@dimen/dp_227"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:minHeight="@dimen/dp_115"
+        android:text="您的信息	正在推广中，\n取消推广暂不退款,是否继续~"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        android:id="@+id/line_h"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@+id/tv_message"
+        android:background="@color/color_eeeeee" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="@dimen/dp_139"
+        android:layout_height="@dimen/dp_48"
+        android:layout_below="@+id/line_h"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/color_888888"
+        android:textSize="@dimen/sp_15" />
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="@dimen/dp_139"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/line_h"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_15" />
+
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignRight="@+id/tv_cancel"
+        android:layout_below="@+id/line_h"
+        android:background="@color/color_eeeeee" />
+
+
+</RelativeLayout>

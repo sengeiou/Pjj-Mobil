@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dp_161"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dp_5"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="@dimen/dp_161"
+            android:layout_height="@dimen/dp_161"
+            android:scaleType="fitXY"
+            android:src="@mipmap/mall" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/color_eeeeee" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minHeight="@dimen/dp_39"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_10"
+            android:text="商品"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_14" />
+
+        <com.pjj.view.custom.PriceTextView
+            android:id="@+id/tv_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_21"
+            android:layout_gravity="right"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:text="金币"
+            android:textColor="@color/color_ff4c4c" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

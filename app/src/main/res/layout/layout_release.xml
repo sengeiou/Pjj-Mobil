@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_20">
+
+    <LinearLayout
+        android:id="@+id/diy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/h_home_diy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_2"
+            android:text="DIY信息发布"
+            android:textSize="@dimen/dp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/h_home_tkxxfb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_2"
+            android:text="填空信息发布"
+            android:textSize="@dimen/dp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/h_home_bm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_2"
+            android:text="便民信息发布"
+            android:textSize="@dimen/dp_14" />
+    </LinearLayout>
+
+</LinearLayout>

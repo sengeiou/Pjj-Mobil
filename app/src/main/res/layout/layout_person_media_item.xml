@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_130"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/dp_130"
+        android:layout_height="@dimen/dp_227"
+        android:scaleType="fitXY"
+        android:src="@mipmap/birthday_empty" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:textColor="@color/color_333333"
+        android:gravity="center"
+        android:text="生日祝福"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

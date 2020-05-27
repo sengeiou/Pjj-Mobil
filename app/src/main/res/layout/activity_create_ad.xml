@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.CreateAdActivity">
+
+    <com.pjj.view.custom.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_42" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_31"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/titleView">
+
+        <RadioButton
+            android:id="@+id/rb_bian_min"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_1"
+            android:layout_weight="1"
+            android:background="@drawable/ad_radio_click"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="便民信息"
+            android:textColor="@color/ad_select_radio_text_color"
+            android:textSize="@dimen/sp_13" />
+
+        <RadioButton
+            android:id="@+id/rb_diy_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_1"
+            android:layout_weight="1"
+            android:background="@drawable/ad_radio_click"
+            android:button="@null"
+            android:gravity="center"
+            android:text="图文模板"
+            android:textColor="@color/ad_select_radio_text_color"
+            android:textSize="@dimen/sp_13" />
+
+        <RadioButton
+            android:id="@+id/rb_diy_video"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_1"
+            android:layout_weight="1"
+            android:background="@drawable/ad_radio_click"
+            android:button="@null"
+            android:gravity="center"
+            android:text="视频模板"
+            android:textColor="@color/ad_select_radio_text_color"
+            android:textSize="@dimen/sp_13" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</android.support.constraint.ConstraintLayout>

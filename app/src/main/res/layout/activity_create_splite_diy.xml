@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.CreateSpliteDiyActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <ImageView
+        android:id="@+id/tiv"
+        android:layout_width="@dimen/dp_130"
+        android:layout_height="@dimen/dp_216"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginStart="@dimen/dp_31"
+        android:background="@mipmap/photo_video_216"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <ImageView
+        android:id="@+id/tiv1"
+        android:layout_width="@dimen/dp_130"
+        android:layout_height="@dimen/dp_216"
+        android:layout_marginStart="@dimen/dp_38"
+        android:src="@mipmap/video_image_tow_216"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@+id/tiv"
+        app:layout_constraintTop_toBottomOf="@+id/titleView"
+        app:layout_constraintTop_toTopOf="@+id/tiv" />
+
+</android.support.constraint.ConstraintLayout>

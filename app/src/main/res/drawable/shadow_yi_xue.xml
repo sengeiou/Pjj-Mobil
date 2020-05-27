@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="0dp">
+        <shape >
+            <solid android:color="@color/color_707070_10" />
+            <gradient
+                android:startColor="@color/color_707070_10"
+                android:endColor="@color/color_theme"/>
+            <size android:width="@dimen/dp_20"
+                android:height="@dimen/dp_20"/>
+        </shape>
+    </item>
+    <item android:top="@dimen/dp_1">
+        <shape >
+            <solid android:color="#FDFDFD" />
+        </shape>
+    </item>
+    <item android:top="@dimen/dp_2">
+        <shape >
+            <solid android:color="#FAFAFA" />
+        </shape>
+    </item>
+    <item android:top="@dimen/dp_3">
+        <shape >
+            <solid android:color="#F8F8F8" />
+        </shape>
+    </item>
+    <item android:top="@dimen/dp_4">
+        <shape >
+            <solid android:color="#F1F1F1" />
+        </shape>
+    </item>
+    <item android:top="@dimen/dp_5">
+        <shape >
+            <solid android:color="#EEEEEE" />
+        </shape>
+    </item>
+    <item android:top="@dimen/dp_7">
+        <shape >
+            <solid android:color="#EAEAEA" />
+        </shape>
+    </item>
+</layer-list>

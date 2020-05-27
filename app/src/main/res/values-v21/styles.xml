@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_theme</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="buttonStyle">@null</item>
+
+        <!--控件选中时的颜色,默认使用colorAccent-->
+        <item name="android:colorControlActivated">@color/color_theme</item>
+        <!--控件按压时的色调-->
+        <item name="android:colorControlHighlight">@color/color_f5f5f5</item>
+    </style>
+</resources>

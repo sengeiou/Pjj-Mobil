@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.ScreenManageSettingTypeActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_31"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="0dp"
+        android:text="合作伙伴未设置投放价格时，则显示官方自营定价"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <TextView
+        android:id="@+id/tv_type_"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="0dp"
+        android:text="运营模式"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_explain" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:text="地方自营"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintRight_toLeftOf="@+id/iv_type"
+        app:layout_constraintTop_toTopOf="@+id/tv_type_" />
+
+    <ImageView
+        android:id="@+id/iv_type"
+        android:layout_width="@dimen/dp_13"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_14"
+        android:src="@mipmap/showxia"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_type"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_type" />
+
+    <View
+        android:id="@+id/line_type"
+        style="@style/lineViewH"
+        app:layout_constraintTop_toBottomOf="@+id/tv_type_" />
+
+    <TextView
+        android:id="@+id/tv_price_"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="0dp"
+        android:text="投放价格"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_type" />
+
+    <EditText
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_48"
+        android:background="@null"
+        android:digits="0.123456789"
+        android:gravity="center_vertical|right"
+        android:hint="请输入"
+        android:inputType="number"
+        android:maxLength="7"
+        android:text=""
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toRightOf="@+id/tv_price_"
+        app:layout_constraintRight_toLeftOf="@+id/tv_price_after"
+        app:layout_constraintTop_toTopOf="@+id/tv_price_" />
+
+    <TextView
+        android:id="@+id/tv_price_after"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_5"
+        android:paddingEnd="@dimen/dp_14"
+        android:text="元/天"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_price" />
+
+    <View
+        android:id="@+id/line_price"
+        style="@style/lineViewH"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_" />
+
+    <TextView
+        android:id="@+id/tv_volume_"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="0dp"
+        android:text="音量设置"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_price" />
+
+    <TextView
+        android:id="@+id/tv_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:drawableEnd="@mipmap/right"
+        android:drawablePadding="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_17"
+        android:paddingEnd="@dimen/dp_17"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_volume_" />
+
+    <View
+        android:id="@+id/line_volume"
+        style="@style/lineViewH"
+        app:layout_constraintTop_toBottomOf="@+id/tv_volume_" />
+
+    <TextView
+        android:id="@+id/tv_set"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/color_theme"
+        android:gravity="center"
+        android:text="设		置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_17"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

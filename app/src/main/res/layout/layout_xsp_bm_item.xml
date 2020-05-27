@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_360"
+    android:layout_height="@dimen/dp_60"
+    android:background="@color/color_073a6c">
+
+    <View
+        android:id="@+id/view_space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_marginBottom="@dimen/dp_2"
+        android:background="@color/color_0172ae" />
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="@dimen/dp_33"
+        android:layout_height="match_parent"
+        android:src="@mipmap/left11" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:background="@drawable/shape_white_bg_2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_1"
+        android:paddingEnd="0dp">
+
+        <TextView
+            android:id="@+id/tv_name_name"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_13"
+            android:background="@color/color_0172ae"
+            android:gravity="center"
+            android:text="发布者"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_8"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="@dimen/dp_125"
+            android:layout_height="@dimen/dp_15"
+            android:gravity="center"
+            android:text="屏加加科技有限公司"
+            android:textColor="@color/color_0172ae"
+            android:textSize="@dimen/sp_8"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_phone_name"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_13"
+            android:background="@color/color_0172ae"
+            android:gravity="center"
+            android:text="电话"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_8"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="@dimen/dp_102"
+            android:layout_height="@dimen/dp_15"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingEnd="@dimen/dp_12"
+            android:text="13856886822"
+            android:textColor="@color/color_0172ae"
+            android:textSize="@dimen/sp_8"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="@dimen/dp_18"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/right11" />
+
+    <TextView
+        android:id="@+id/tv_title_type"
+        android:layout_width="@dimen/dp_11"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_3_5"
+        android:gravity="center"
+        android:text="便民信息"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_10" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_toStartOf="@+id/iv_right"
+        android:layout_toEndOf="@+id/iv_left"
+        android:gravity="center_vertical"
+        android:maxLength="60"
+        android:text="阿萨德法师法"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_10" />
+</RelativeLayout>

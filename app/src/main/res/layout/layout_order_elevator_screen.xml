@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_33">
+
+    <TextView
+        android:id="@+id/tv_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginStart="@dimen/dp_37"
+        android:gravity="center"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/tv_inf"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_32"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/dp_11"
+        android:gravity="center"
+        android:text="时间详情"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_12" />
+
+    <View
+        style="@style/lineViewH"
+        android:layout_below="@+id/tv_screen" />
+</RelativeLayout>

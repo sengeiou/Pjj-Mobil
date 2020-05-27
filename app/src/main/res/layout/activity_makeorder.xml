@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    tools:context=".view.activity.MakeOrderActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <TextView
+        android:id="@+id/tv_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_42"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:text="模板预览"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/space_date1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_63"
+        android:background="@color/color_theme"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <View
+        android:id="@+id/space_date"
+        android:layout_width="@dimen/dp_346"
+        android:layout_height="@dimen/dp_58"
+        android:layout_marginStart="@dimen/dp_7"
+        android:background="@drawable/shape_white35_bg_6_lr"
+        app:layout_constraintBottom_toBottomOf="@+id/space_date1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_start_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_17"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="起始日期"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/space_date"
+        app:layout_constraintTop_toTopOf="@+id/space_date" />
+
+    <TextView
+        android:id="@+id/tv_end_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_59"
+        android:text="结束日期"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/tv_start_"
+        app:layout_constraintTop_toTopOf="@+id/tv_start_" />
+
+    <TextView
+        android:id="@+id/tv_date_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_7"
+        android:includeFontPadding="false"
+        android:text="请选择"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_start_"
+        app:layout_constraintRight_toRightOf="@+id/tv_start_"
+        app:layout_constraintTop_toBottomOf="@+id/tv_start_" />
+
+    <TextView
+        android:id="@+id/tv_date_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_7"
+        android:includeFontPadding="false"
+        android:text="请选择"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_end_"
+        app:layout_constraintRight_toRightOf="@+id/tv_end_"
+        app:layout_constraintTop_toBottomOf="@+id/tv_end_" />
+
+    <TextView
+        android:id="@+id/tv_date_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@mipmap/right_black"
+        android:drawablePadding="@dimen/dp_14"
+        android:includeFontPadding="false"
+        android:paddingStart="0dp"
+        android:paddingEnd="@dimen/dp_24"
+        android:text="共0天"
+        android:textColor="@color/color_555555"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_date_end"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_end_" />
+
+    <View
+        android:id="@+id/space_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_78"
+        android:background="@drawable/shape_white_bg_6_b_lr"
+        app:layout_constraintTop_toBottomOf="@+id/space_date" />
+
+    <TextView
+        android:id="@+id/tv_second_"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_38"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_19"
+        android:paddingEnd="0dp"
+        android:text="单次展示秒数："
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space_date" />
+
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginStart="@dimen/dp_19"
+        android:background="@drawable/shape_333_side_3"
+        android:gravity="center"
+        android:text="5秒"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_second_" />
+
+    <TextView
+        android:id="@+id/tv_10"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginStart="@dimen/dp_8"
+        android:background="@drawable/shape_333_side_3"
+        android:gravity="center"
+        android:text="10秒"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toRightOf="@+id/tv_5"
+        app:layout_constraintTop_toTopOf="@+id/tv_5" />
+
+    <TextView
+        android:id="@+id/tv_15"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginStart="@dimen/dp_8"
+        android:background="@drawable/shape_333_side_3"
+        android:gravity="center"
+        android:text="15秒"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toRightOf="@+id/tv_10"
+        app:layout_constraintTop_toTopOf="@+id/tv_5" />
+
+    <TextView
+        android:id="@+id/tv_30"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginStart="@dimen/dp_8"
+        android:background="@drawable/shape_333_side_3"
+        android:gravity="center"
+        android:text="30秒"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toRightOf="@+id/tv_15"
+        app:layout_constraintTop_toTopOf="@+id/tv_5" />
+
+    <TextView
+        android:id="@+id/tv_60"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginStart="@dimen/dp_8"
+        android:background="@drawable/shape_333_side_3"
+        android:gravity="center"
+        android:text="60秒"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toRightOf="@+id/tv_30"
+        app:layout_constraintTop_toTopOf="@+id/tv_5" />
+
+    <TextView
+        android:id="@+id/tv_defined"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginStart="@dimen/dp_8"
+        android:background="@drawable/shape_333_side_3"
+        android:gravity="center"
+        android:text="自定义"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toRightOf="@+id/tv_60"
+        app:layout_constraintTop_toTopOf="@+id/tv_5" />
+
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:paddingStart="@dimen/dp_19"
+        android:paddingTop="@dimen/dp_11"
+        android:paddingEnd="@dimen/dp_19"
+        android:paddingBottom="@dimen/dp_8"
+        android:text="由于您选择的部分屏幕广告投放数量已饱和，自动为您选择可投放的屏幕"
+        android:textColor="@color/color_ea4a4a"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/space_time" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_building"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_f6f6f6"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_m_5"
+        app:layout_constraintBottom_toTopOf="@+id/rl_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/tv_explain" />
+
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_64"
+        android:background="@mipmap/bottom_bg"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_6"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="@dimen/dp_29"
+            android:paddingEnd="0dp">
+
+
+            <TextView
+                android:id="@+id/tv_sum_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_price_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sum_screen"
+                android:gravity="center_vertical"
+                android:paddingEnd="0dp"
+                android:text="共计："
+                android:textColor="@color/color_444444"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_sum_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_price_"
+                android:layout_toEndOf="@+id/tv_price_"
+                android:gravity="center_vertical"
+                android:text="0.00元"
+                android:textColor="@color/color_ff4c4c"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_price_inf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_price_"
+                android:layout_toEndOf="@+id/tv_sum_price"
+                android:drawableEnd="@mipmap/more_two"
+                android:drawablePadding="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_14"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="0dp"
+                android:paddingBottom="0dp"
+                android:text="查看明细"
+                android:textColor="@color/color_theme"
+                android:textSize="@dimen/sp_13" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_58"
+            android:background="@color/color_theme"
+            android:gravity="center"
+            android:text="去支付"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

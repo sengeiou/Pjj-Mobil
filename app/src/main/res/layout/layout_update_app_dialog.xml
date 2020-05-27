@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_279"
+    android:layout_height="@dimen/dp_199"
+    android:background="@mipmap/ad_dialog_bg">
+
+    <TextView
+        android:layout_width="@dimen/dp_279"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_29"
+        android:gravity="center_horizontal|bottom"
+        android:text="软件更新提醒!"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_17"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_update_text"
+        android:layout_width="@dimen/dp_129"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_65"
+        android:gravity="center"
+        android:text="梯加加最新版本上线啦！体验更好，操作更流畅。"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_11" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_145"
+        android:layout_marginBottom="@dimen/dp_14"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_upload"
+            android:layout_width="@dimen/dp_118"
+            android:layout_height="@dimen/dp_39"
+            android:background="@drawable/shape_theme_bg_5"
+            android:gravity="center"
+            android:text="去更新"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="@dimen/dp_118"
+            android:layout_height="@dimen/dp_39"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:background="@drawable/shape_theme_bg_5"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

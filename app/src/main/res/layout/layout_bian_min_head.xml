@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_34"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/tv_deal_with"
+        android:drawableStart="@mipmap/write1"
+        android:drawablePadding="@dimen/dp_5"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_14"
+        android:textColor="@color/color_666666"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:drawableStart="@mipmap/delete_white"
+        android:layout_marginEnd="@dimen/dp_14"
+        android:drawablePadding="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_12"
+        android:text="删除" />
+    <TextView
+        android:id="@+id/tv_look"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:layout_toStartOf="@+id/tv_delete"
+        android:drawableStart="@mipmap/preview"
+        android:drawablePadding="@dimen/dp_5"
+        android:textColor="@color/color_666666"
+        android:gravity="center_vertical"
+        android:text="预览"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_deal_with"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/dp_14"
+        android:layout_toStartOf="@+id/tv_look"
+        android:drawableStart="@mipmap/write"
+        android:textColor="@color/color_666666"
+        android:drawablePadding="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:text="编辑"
+        android:textSize="@dimen/sp_12" />
+
+</RelativeLayout>
+

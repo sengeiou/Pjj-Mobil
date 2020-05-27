@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.ShowSpeedTemplateFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_speed"
+        android:paddingStart="@dimen/dp_31"
+        android:paddingTop="@dimen/sp_13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/iv_no_speed_data"
+        android:layout_width="@dimen/dp_216"
+        android:layout_height="@dimen/dp_144"
+        android:src="@mipmap/no_speed_data"
+        android:layout_gravity="center"/>
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pjj.view.custom.SwipeMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_38"
+    android:background="@null">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_local"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:gravity="center"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_xsp_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dp_36"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="屏幕"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="@dimen/dp_43"
+        android:layout_height="match_parent"
+        android:background="@color/color_df3629"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/white" />
+</com.pjj.view.custom.SwipeMenu>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.SelectReleaseAreaActivity">
+
+    <com.pjj.view.custom.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_42" />
+
+    <com.pjj.view.custom.CustomCoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fl_sure"
+        android:layout_below="@+id/titleView">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/ab_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:elevation="0dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_196">
+
+                    <com.amap.api.maps.MapView
+                        android:id="@+id/mapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_22"
+                        android:layout_marginStart="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:drawableStart="@mipmap/positioning"
+                        android:drawableEnd="@mipmap/down_icon"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:gravity="center_vertical"
+                        android:text="北京"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/sp_14" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_click_select"
+                    android:layout_width="@dimen/dp_331"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="@dimen/dp_17"
+                    android:background="@drawable/shape_theme_bg_3"
+                    android:gravity="center"
+                    android:text="点击选择发布区域"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_map" />
+
+                <View
+                    android:id="@+id/line_map"
+                    style="@style/lineViewH"
+                    android:layout_marginTop="@dimen/dp_17"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_click_select" />
+
+                <ImageView
+                    android:id="@+id/iv_positioning"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_27"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_11"
+                    android:src="@mipmap/positioning_gray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_map" />
+
+                <TextView
+                    android:id="@+id/tv_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_27"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:gravity="center_vertical"
+                    android:text="随机"
+                    android:textColor="@color/color_444444"
+                    android:textSize="@dimen/sp_13"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_positioning"
+                    app:layout_constraintTop_toTopOf="@+id/iv_positioning" />
+
+                <TextView
+                    android:id="@+id/tv_repositioning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_27"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:drawableRight="@mipmap/positioning_action"
+                    android:drawablePadding="@dimen/dp_24"
+                    android:gravity="center_vertical"
+                    android:text="重新定位"
+                    android:textColor="@color/color_888888"
+                    android:textSize="@dimen/sp_13"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/iv_positioning" />
+
+                <View
+                    android:id="@+id/line_location"
+                    style="@style/lineViewH"
+                    android:layout_marginTop="@dimen/dp_11"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_positioning" />
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:src="@mipmap/search"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_location" />
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="@dimen/dp_143"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:background="@drawable/shape_999999_side_3"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_6"
+                    android:text="点击搜索发布地点"
+                    android:textColor="@color/color_ababab"
+                    android:textSize="@dimen/sp_12"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_search"
+                    app:layout_constraintTop_toTopOf="@+id/iv_search" />
+
+                <View
+                    android:id="@+id/line_search"
+                    style="@style/lineViewH"
+                    android:layout_marginTop="@dimen/dp_12"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_search" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_guess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_48"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/dp_20"
+                    android:paddingEnd="@dimen/dp_53"
+                    android:text="小区列表"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_scope"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_999999_bg_slide_5"
+                    android:drawableEnd="@mipmap/xia_orientation"
+                    android:drawablePadding="@dimen/dp_9"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/dp_7"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingEnd="@dimen/dp_7"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:text="选择范围1km"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/sp_13" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_all_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@mipmap/unselect"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/dp_15"
+                    android:text="全部选中"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_building"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </com.pjj.view.custom.CustomCoordinatorLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70"
+        android:layout_alignParentBottom="true">
+
+        <View style="@style/lineViewH" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="@dimen/dp_96"
+            android:layout_height="@dimen/dp_48"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="@dimen/dp_34"
+            android:background="@drawable/shape_theme_bg_3"
+            android:gravity="center"
+            android:text="确认选择"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragment.SelectDayTimeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_date_name"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_19"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/date1" />
+
+        <TextView
+            android:id="@+id/tv_date_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_toRightOf="@id/iv_date_name"
+            android:text="起始日期"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/iv_you"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_6"
+            android:src="@mipmap/show_you" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_toStartOf="@+id/iv_you"
+            android:layout_toEndOf="@+id/tv_date_start"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp_43"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="0dp"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_date"
+            android:background="@color/color_f5f5f5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_time_start"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_19"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/hour_start" />
+
+        <TextView
+            android:id="@+id/tv_time_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_toRightOf="@id/iv_time_start"
+            android:text="起始时间"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/iv_time_you"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_6"
+            android:src="@mipmap/show_you" />
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_toStartOf="@+id/iv_time_you"
+            android:layout_toEndOf="@+id/tv_time_start"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp_43"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="0dp"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_week"
+            android:background="@color/color_f5f5f5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_week_name"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_19"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/week_size" />
+
+        <TextView
+            android:id="@+id/tv_week_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_toRightOf="@id/iv_week_name"
+            android:text="发布周数"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/iv_week_you"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_6"
+            android:src="@mipmap/show_you" />
+
+        <TextView
+            android:id="@+id/tv_week_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/iv_week_you"
+            android:layout_toEndOf="@+id/tv_week_start"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp_43"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="0dp"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_week_num"
+            android:background="@color/color_f5f5f5" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_38"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_48"
+        android:paddingEnd="@dimen/dp_48"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:paddingStart="@dimen/dp_14"
+            android:paddingEnd="@dimen/dp_14"
+            android:layout_height="@dimen/dp_24"
+            android:background="@drawable/time_select"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/sp_11"
+            android:text="1"
+            android:textColor="@color/time_select_radio_text_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp" />
+
+        <RadioButton
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:paddingStart="@dimen/dp_14"
+            android:paddingEnd="@dimen/dp_14"
+            android:layout_height="@dimen/dp_24"
+            android:textSize="@dimen/sp_11"
+            android:background="@drawable/time_select"
+            android:button="@null"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/time_select_radio_text_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp" />
+
+        <RadioButton
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:paddingStart="@dimen/dp_14"
+            android:paddingEnd="@dimen/dp_14"
+            android:layout_height="@dimen/dp_24"
+            android:textSize="@dimen/sp_11"
+            android:background="@drawable/time_select"
+            android:button="@null"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/time_select_radio_text_color" />
+
+        <View
+            android:id="@+id/space_last"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp" />
+
+        <RadioButton
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:paddingStart="@dimen/dp_14"
+            android:paddingEnd="@dimen/dp_14"
+            android:layout_height="@dimen/dp_24"
+            android:textSize="@dimen/sp_11"
+            android:background="@drawable/time_select"
+            android:button="@null"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/time_select_radio_text_color" />
+    </RadioGroup>
+
+    <View style="@style/lineViewH"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_time_end"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_19"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/end_date" />
+
+        <TextView
+            android:id="@+id/tv_time_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_toRightOf="@id/iv_time_end"
+            android:text="结束时间"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/iv_end_you"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_6"
+            android:src="@mipmap/show_you" />
+
+        <TextView
+            android:id="@+id/tv_date_end"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_43"
+            android:layout_toEndOf="@+id/tv_time_end"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="0dp"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_date_end_hour"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_43"
+            android:layout_marginStart="0dp"
+            android:layout_toStartOf="@+id/iv_end_you"
+            android:layout_toEndOf="@+id/tv_date_end"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="0dp"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_date_end"
+            android:background="@color/color_f5f5f5" />
+    </RelativeLayout>
+
+</LinearLayout>

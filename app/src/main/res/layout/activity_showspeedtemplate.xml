@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.ShowSpeedTemplateActivity">
+
+    <include layout="@layout/layout_head_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_speed"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingTop="@dimen/sp_13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+    <LinearLayout
+        android:id="@+id/ll_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView">
+
+        <ImageView
+            android:id="@+id/iv_no_speed_data"
+            android:layout_width="@dimen/dp_216"
+            android:layout_height="@dimen/dp_144"
+            android:layout_marginTop="@dimen/dp_90"
+            android:src="@mipmap/no_speed_data" />
+
+        <TextView
+            android:layout_width="@dimen/dp_216"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:gravity="center"
+            android:text="暂无数据~"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
